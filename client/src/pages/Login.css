@@ -1,0 +1,78 @@
+.login-page {
+  min-height: calc(100vh - 60px);
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #dce8f5 100%);
+}
+
+.login-panel {
+  width: min(100%, 440px);
+  padding: 36px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(39, 64, 91, 0.14);
+}
+
+.login-brand {
+  margin-bottom: 18px;
+  color: #357abd;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.login-panel h1 {
+  margin: 0 0 8px;
+  color: #243447;
+  font-size: 28px;
+}
+
+.login-subtitle {
+  margin: 0 0 28px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.login-submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.login-switch {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #357abd;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-switch:hover {
+  text-decoration: underline;
+}
+
+.demo-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #b8cbe0;
+  border-radius: 6px;
+  background: #f3f8fc;
+  color: #315b7d;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.demo-button:hover {
+  background: #e7f1f8;
+}
+
+@media (max-width: 520px) {
+  .login-panel {
+    padding: 28px 22px;
+  }
+}

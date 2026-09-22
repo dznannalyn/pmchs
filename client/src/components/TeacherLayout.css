@@ -1,0 +1,166 @@
+.teacher-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 0;
+  align-items: start;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+
+.teacher-sidebar {
+  position: sticky;
+  top: 84px;
+  min-height: calc(100vh - 60px);
+  padding: 28px 14px;
+  border-right: 1px solid #eadfbd;
+  background: #fff7c7;
+}
+
+.sidebar-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eadfbd;
+  margin-bottom: 16px;
+}
+
+.sidebar-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c81e2b;
+  box-shadow: 0 4px 12px rgba(200, 30, 43, 0.22);
+}
+
+.sidebar-school-name {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #971522;
+  line-height: 1.35;
+  letter-spacing: 0.1px;
+}
+
+.sidebar-label {
+  padding: 0 12px 16px;
+  color: #8d7624;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.teacher-sidebar nav.sidebar-nav {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.teacher-sidebar .sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  border-left: 3px solid transparent;
+  color: #4b4d50;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.teacher-sidebar .sidebar-link span {
+  width: 18px;
+  color: #3d8b45;
+  font-size: 18px;
+  text-align: center;
+}
+
+.teacher-sidebar .sidebar-link:hover,
+.teacher-sidebar .sidebar-link.active {
+  border-left-color: #c81e2b;
+  background: #fffdf5;
+  color: #971522;
+}
+
+.teacher-content {
+  min-width: 0;
+  width: 100%;
+  padding: 32px 40px 48px;
+}
+
+.teacher-content--full-bleed {
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Full-bleed layout modifier */
+.teacher-layout--full-bleed {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.teacher-layout--full-bleed .teacher-content--full-bleed {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .teacher-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .teacher-layout {
+    display: block;
+  }
+
+  .teacher-sidebar {
+    position: static;
+    min-height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-right: 0;
+    border-bottom: 1px solid #eadfbd;
+  }
+
+  .teacher-content {
+    padding: 24px 16px 32px;
+  }
+
+  .sidebar-label {
+    padding: 4px 8px 8px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-link {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 6px;
+    border-left: 0;
+    border-bottom: 3px solid transparent;
+    font-size: 12px;
+  }
+
+  .sidebar-link:hover,
+  .sidebar-link.active {
+    border-left: 0;
+    border-bottom-color: #c81e2b;
+  }
+
+}

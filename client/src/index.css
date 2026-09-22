@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fffdf5;
+  color: #202124;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+:root {
+  --school-red: #c81e2b;
+  --school-red-dark: #971522;
+  --school-gold: #f4cf3a;
+  --school-gold-soft: #fff7c7;
+  --school-green: #3d8b45;
+  --school-green-soft: #eaf6e8;
+  --school-sky: #55b9ce;
+  --school-ink: #202124;
+  --school-ink-soft: #4b4d50;
+  --school-paper: #fffdf5;
+  --school-line: #eadfbd;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--school-red);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(244, 207, 58, 0.75);
+  outline-offset: 2px;
+}
+
+.btn-primary,
+.btn-primary-nav,
+.generate-btn,
+.btn-success {
+  background: var(--school-red) !important;
+  border-color: var(--school-red) !important;
+}
+
+.btn-primary:hover,
+.btn-primary-nav:hover,
+.generate-btn:hover,
+.btn-success:hover {
+  background: var(--school-red-dark) !important;
+  border-color: var(--school-red-dark) !important;
+}
+
+.btn-secondary,
+.btn-outline {
+  border-color: var(--school-red) !important;
+  color: var(--school-red) !important;
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+  background: var(--school-gold-soft) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--school-sky) !important;
+  box-shadow: 0 0 0 3px rgba(85, 185, 206, 0.2) !important;
+}
+
+.alert-success,
+.success-color {
+  color: var(--school-green) !important;
+}
+
+.alert-success {
+  background: var(--school-green-soft) !important;
+  border-color: #abd5a8 !important;
+}
